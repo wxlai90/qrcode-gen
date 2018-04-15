@@ -19,20 +19,20 @@ def qr_gen(data, count):
         qr.clear()
 
 def iterate_data(filename, count=0):
-	f = open(filename)
-	contents = f.readlines()
-	for i in contents:
-		count += 1
-		qr_gen(i.strip('\n'), count)
+    f = open(filename)
+    contents = f.readlines()
+    for i in contents:
+        count += 1
+        qr_gen(i.strip('\n'), count)
 
 def main():
-	if len(sys.argv) < 2:
-		print "You need to pass filename containing data as argument!"
-		sys.exit(1)
-	else:
-		iterate_data(sys.argv[1])
+    if len(sys.argv) < 2:
+        print "You need to pass filename containing data as argument!"
+        sys.exit(1)
+    else:
+        iterate_data(sys.argv[1])
 
 
 if __name__ == "__main__":
-	main()
+    main()
 

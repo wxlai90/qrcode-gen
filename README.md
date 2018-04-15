@@ -1,10 +1,12 @@
 # qrcode-gen
 
+___
+
+## convenience scripts to generate qrcode from text data.
+
+___
 ```
+pip install -r requirements.txt
 
-## convenience scripts to generate qrcodes in batches. used for bitcoin wallet generation.
-
+python ./qr-codes-local-with-label.py file_with_data
 ```
-
-sudo apt install python-qrcode || pip install qrcode for dependencies.
-
